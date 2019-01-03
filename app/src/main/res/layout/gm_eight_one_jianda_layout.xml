@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_gmeight_one_jianda_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/text_size_16"
+    android:paddingRight="@dimen/text_size_16">
+
+    <View
+        android:layout_marginTop="@dimen/space_8"
+        android:id="@+id/view_gm_eight_one_line"
+        style="@style/view_line_1_gray" />
+
+    <com.xuechuan.xcedu.weight.ContentEditText
+        android:id="@+id/et_eight_one_input_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_180"
+        android:layout_marginBottom="@dimen/space_8"
+        android:layout_marginTop="@dimen/space_8"
+        android:background="@color/transparent"
+        android:gravity="top|left"
+        android:hint="请输入答案"
+        android:imeOptions="actionNone"
+        android:inputType="textAutoCorrect|textCapSentences|textMultiLine"
+        android:lines="8"
+        android:padding="@dimen/space_8" />
+
+    <View
+         android:id="@+id/view_gm_eight_two_line"
+        style="@style/view_line_1_gray" />
+
+    <RelativeLayout
+        android:id="@+id/rl_gm_eight_one_yuyin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_gm_eight_one_look_jiexi"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/space_32"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/space_8"
+            android:drawableLeft="@mipmap/bg_chakanjiexi"
+            android:gravity="center_vertical"
+            android:text="@string/look_analyze"
+            android:textColor="@color/text_fu_color"
+            android:textSize="@dimen/text_size_14" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_gm_eight_one_yuyin_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/qb_anli_yuyinshuru" />
+
+            <ImageView
+                android:id="@+id/iv_gm_eight_one_yuyin_one_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:src="@drawable/qb_anli_yuyinshuru" />
+            <TextView
+                android:id="@+id/tv_gm_eight_one_yuyin_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="轻触麦克风语音输入"
+                android:textColor="@color/text_fu_color"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_gm_eight_one_look_jiexi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_32"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_gm_eight_one_answer_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/qb_xcjiexi" />
+
+        <TextView
+            android:id="@+id/tv_gm_eight_one_answer_title_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_size_16"
+            android:paddingLeft="@dimen/text_size_16"
+            android:paddingRight="@dimen/text_size_16"
+             />
+    </LinearLayout>
+</LinearLayout>
